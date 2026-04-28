@@ -1,0 +1,6 @@
+bill_payment_id,account_id,customer_id,biller_code,bill_reference,payment_amount,currency_code,paid_at,payment_status,payment_method,service_type
+b_3001,acc_201,cust_006,DEWA,INV1001,320.40,AED,2026-04-27T08:45:00,paid,account_balance,utilities
+b_3002,acc_202,cust_007,ETISALAT,INV1002,210.00,AED,2026-04-27T10:10:00,paid,debit_card,telecom
+b_3003,acc_203,cust_008,SALIK,INV1003,50.00,AED,2026-04-27T11:50:00,failed,account_balance,toll
+b_3004,acc_204,cust_009,ADDC,INV1004,610.75,AED,2026-04-27T13:25:00,pending,credit_card,utilities
+b_3005,acc_205,cust_010,TAQA,INV1005,145.90,AED,2026-04-27T17:05:00,paid,account_balance,utilities

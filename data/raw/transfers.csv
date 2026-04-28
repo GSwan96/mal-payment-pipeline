@@ -1,0 +1,6 @@
+transfer_id,from_account_id,to_account_id,customer_id,beneficiary_id,transfer_amount,ccy,created_at,transfer_status,transfer_type,channel
+t_2001,acc_001,acc_101,cust_001,ben_001,1500.00,AED,2026-04-27T09:00:00,completed,local,mobile_app
+t_2002,acc_002,acc_102,cust_002,ben_002,250.00,AED,2026-04-27T10:30:00,failed,international,web
+t_2003,acc_003,acc_103,cust_003,ben_003,999.99,USD,2026-04-27T12:00:00,completed,international,mobile_app
+t_2004,acc_004,acc_104,cust_004,ben_004,75.25,AED,2026-04-27T14:00:00,pending,local,api
+t_2005,acc_005,acc_105,cust_005,ben_005,4300.00,AED,2026-04-27T16:00:00,completed,local,branch

@@ -1,0 +1,6 @@
+card_txn_id,card_id,customer_id,merchant_id,amount,currency,txn_timestamp,status,card_network,merchant_category,auth_code
+c_1001,card_001,cust_001,m_amazon,245.75,AED,2026-04-27T10:15:00,approved,Visa,ecommerce,A1B2C3
+c_1002,card_002,cust_002,m_noon,89.50,AED,2026-04-27T11:05:00,declined,Mastercard,retail,D4E5F6
+c_1003,card_003,cust_003,m_careem,37.25,AED,2026-04-27T12:20:00,approved,Visa,transport,G7H8I9
+c_1004,card_001,cust_001,m_talabat,56.80,AED,2026-04-27T13:45:00,approved,Visa,food,J1K2L3
+c_1005,card_004,cust_004,m_lulu,412.00,AED,2026-04-27T15:10:00,pending,Mastercard,grocery,M4N5O6
