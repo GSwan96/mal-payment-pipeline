@@ -105,3 +105,18 @@ Run with:
 Outputs:
 - `monitoring/data_quality_report.csv`
 - `monitoring/data_quality_summary.md`
+
+### Demo anomaly scenario
+An additional monitoring demo was included to show how the checks behave when common data quality issues are present.
+
+Run with:
+`python src/data_quality_checks_demo.py`
+
+Outputs:
+- `monitoring/data_quality_demo_report.csv`
+- `monitoring/data_quality_demo_summary.md`
+
+The demo injects:
+- a duplicate event in Cards
+- nulls in required fields for Transfers
+- a volume drop and stale timestamp in Bill Payments
