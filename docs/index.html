@@ -7,7 +7,7 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      max-width: 900px;
+      max-width: 960px;
       margin: 40px auto;
       padding: 0 20px;
       line-height: 1.5;
@@ -36,14 +36,15 @@
     }
     ul {
       margin-top: 8px;
+      padding-left: 20px;
     }
   </style>
 </head>
 <body>
   <h1>Mal Payment Pipeline</h1>
   <p>
-    This demo shows the outputs of a unified payment data pipeline built for
-    Cards, Transfers, and Bill Payments.
+    This demo shows a unified payment data pipeline built across three product domains:
+    <strong>Cards</strong>, <strong>Transfers</strong>, and <strong>Bill Payments</strong>.
   </p>
 
   <div class="card">
@@ -56,28 +57,78 @@
   </div>
 
   <div class="card">
-    <h2>Part 1 - Pipeline Outputs</h2>
+    <h2>Part 1 - Source Data by Product</h2>
     <ul>
-      <li><a href="../data/processed/unified_payments.csv" target="_blank">unified_payments.csv</a></li>
-      <li><a href="../data/processed/unified_payments_v1_example.csv" target="_blank">unified_payments_v1_example.csv</a></li>
-      <li><a href="../sql/downstream_queries.sql" target="_blank">downstream_queries.sql</a></li>
+      <li>
+        <a href="https://github.com/GSwan96/mal-payment-pipeline/blob/main/data/raw/cards.csv" target="_blank">
+          Cards - cards.csv
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/GSwan96/mal-payment-pipeline/blob/main/data/raw/transfers.csv" target="_blank">
+          Transfers - transfers.csv
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/GSwan96/mal-payment-pipeline/blob/main/data/raw/bill_payments.csv" target="_blank">
+          Bill Payments - bill_payments.csv
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Part 1 - Unified Pipeline Outputs</h2>
+    <ul>
+      <li>
+        <a href="https://github.com/GSwan96/mal-payment-pipeline/blob/main/data/processed/unified_payments.csv" target="_blank">
+          unified_payments.csv
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/GSwan96/mal-payment-pipeline/blob/main/data/processed/unified_payments.parquet" target="_blank">
+          unified_payments.parquet
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/GSwan96/mal-payment-pipeline/blob/main/data/processed/unified_payments_v1_example.csv" target="_blank">
+          unified_payments_v1_example.csv
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/GSwan96/mal-payment-pipeline/blob/main/sql/downstream_queries.sql" target="_blank">
+          downstream_queries.sql
+        </a>
+      </li>
     </ul>
   </div>
 
   <div class="card">
     <h2>Part 3 - Data Quality Monitoring</h2>
     <ul>
-      <li><a href="../monitoring/data_quality_report.csv" target="_blank">data_quality_report.csv</a></li>
-      <li><a href="../monitoring/data_quality_summary.md" target="_blank">data_quality_summary.md</a></li>
-      <li><a href="../src/data_quality_checks.py" target="_blank">data_quality_checks.py</a></li>
+      <li>
+        <a href="https://github.com/GSwan96/mal-payment-pipeline/blob/main/monitoring/data_quality_report.csv" target="_blank">
+          data_quality_report.csv
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/GSwan96/mal-payment-pipeline/blob/main/monitoring/data_quality_summary.md" target="_blank">
+          data_quality_summary.md
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/GSwan96/mal-payment-pipeline/blob/main/src/data_quality_checks.py" target="_blank">
+          data_quality_checks.py
+        </a>
+      </li>
     </ul>
   </div>
 
   <div class="card">
-    <h2>What the monitoring checks</h2>
+    <h2>Monitoring Coverage</h2>
     <ul>
-      <li>Schema compliance rate by source</li>
-      <li>Freshness lag by source</li>
+      <li>Schema compliance rate by source system</li>
+      <li>Freshness lag by source system</li>
       <li>Null rate across required fields</li>
       <li>Duplicate event counts</li>
       <li>Volume anomaly flags</li>
@@ -85,7 +136,7 @@
   </div>
 
   <div class="card">
-    <h2>Run commands</h2>
+    <h2>Run Commands</h2>
     <p><code>python src/main.py</code></p>
     <p><code>python src/data_quality_checks.py</code></p>
   </div>
