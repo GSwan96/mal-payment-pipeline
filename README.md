@@ -88,3 +88,20 @@ These queries show:
 - daily payment volume by type
 - failed and pending payment analysis
 - customer payment summaries
+
+## Data Quality Monitoring
+A simple monitoring layer was added to show how data quality would be operationalized for the shared payment platform.
+
+The monitoring script tracks:
+- schema compliance rate by source
+- freshness lag by source
+- null rate across required fields
+- duplicate event counts
+- volume anomaly flags
+
+Run with:
+`python src/data_quality_checks.py`
+
+Outputs:
+- `monitoring/data_quality_report.csv`
+- `monitoring/data_quality_summary.md`
