@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mal Payment Pipeline Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      line-height: 1.5;
+      color: #222;
+    }
+    h1, h2 {
+      margin-bottom: 10px;
+    }
+    .card {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 16px;
+      margin: 16px 0;
+    }
+    code {
+      background: #f4f4f4;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+    a {
+      color: #0b57d0;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    ul {
+      margin-top: 8px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Mal Payment Pipeline</h1>
+  <p>
+    This demo shows the outputs of a unified payment data pipeline built for
+    Cards, Transfers, and Bill Payments.
+  </p>
+
+  <div class="card">
+    <h2>Repository</h2>
+    <p>
+      <a href="https://github.com/GSwan96/mal-payment-pipeline" target="_blank">
+        View GitHub Repository
+      </a>
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Part 1 - Pipeline Outputs</h2>
+    <ul>
+      <li><a href="../data/processed/unified_payments.csv" target="_blank">unified_payments.csv</a></li>
+      <li><a href="../data/processed/unified_payments_v1_example.csv" target="_blank">unified_payments_v1_example.csv</a></li>
+      <li><a href="../sql/downstream_queries.sql" target="_blank">downstream_queries.sql</a></li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Part 3 - Data Quality Monitoring</h2>
+    <ul>
+      <li><a href="../monitoring/data_quality_report.csv" target="_blank">data_quality_report.csv</a></li>
+      <li><a href="../monitoring/data_quality_summary.md" target="_blank">data_quality_summary.md</a></li>
+      <li><a href="../src/data_quality_checks.py" target="_blank">data_quality_checks.py</a></li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>What the monitoring checks</h2>
+    <ul>
+      <li>Schema compliance rate by source</li>
+      <li>Freshness lag by source</li>
+      <li>Null rate across required fields</li>
+      <li>Duplicate event counts</li>
+      <li>Volume anomaly flags</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Run commands</h2>
+    <p><code>python src/main.py</code></p>
+    <p><code>python src/data_quality_checks.py</code></p>
+  </div>
+</body>
+</html>
